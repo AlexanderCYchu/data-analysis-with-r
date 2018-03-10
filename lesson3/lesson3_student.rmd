@@ -22,7 +22,7 @@ names(pf)
 Notes:
 
 ```{r Histogram of Users\' Birthdays}
-install.packages('ggplot2')
+# install.packages('ggplot2')
 library(ggplot2)
 names(pf)
 ggplot(aes(x = dob_day), data = pf) +
@@ -93,7 +93,8 @@ Notes:
 #### What code would you enter to create a histogram of friend counts?
 
 ```{r Friend Count}
-
+ggplot(aes(x = friend_count), data = pf) +
+  geom_histogram(binwidth = 100) 
 ```
 
 #### How is this plot similar to Moira's first plot?
